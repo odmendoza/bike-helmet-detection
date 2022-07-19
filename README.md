@@ -1,28 +1,23 @@
-# TensorFlow Lite Object Detection Android Demo
+# TensorFlow Lite Helmet Detection Android APP
+
+   Code taken from [this tensorflow repo](https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android).
 
 ### Overview
 
-This is a camera app that continuously detects the objects (bounding boxes and
-classes) in the frames seen by your device's back camera, with the option to use
-a quantized
-[MobileNet SSD](https://tfhub.dev/tensorflow/lite-model/ssd_mobilenet_v1/1/metadata/2),
+This is a camera app that continuously detects persons with and without bicycle helmet (bounding boxes and
+classes) in the frames seen by your device's back camera, with the option to use 
 [EfficientDet Lite 0](https://tfhub.dev/tensorflow/lite-model/efficientdet/lite0/detection/metadata/1),
 [EfficientDet Lite1](https://tfhub.dev/tensorflow/lite-model/efficientdet/lite1/detection/metadata/1),
+[EfficientDet Lite2](https://tfhub.dev/tensorflow/lite-model/efficientdet/lite2/detection/metadata/1),
 or
-[EfficientDet Lite2](https://tfhub.dev/tensorflow/lite-model/efficientdet/lite2/detection/metadata/1)
-model trained on the [COCO dataset](http://cocodataset.org/). These instructions
-walk you through building and running the demo on an Android device.
-
-The model files are downloaded via Gradle scripts when you build and run the
-app. You don't need to do any steps to download TFLite models into the project
-explicitly.
+[EfficientDet Lite3](https://tfhub.dev/tensorflow/lite-model/efficientdet/lite3/detection/metadata/1)
+model trained on the [Kaggle dataset](kaggle.com/datasets/brendan45774/bike-helmets-detection).
 
 This application should be run on a physical Android device.
 
-![App example showing UI controls. Highlights a cat, a book, and a couch.](screenshot1.jpg?raw=true "Screenshot with controls")
-
-![App example without UI controls. Highlights a book, a cup, and a potted plant.](screenshot2.jpg?raw=true "Screenshot without controls")
-
+ <img src="https://user-images.githubusercontent.com/11874274/179691419-20401e67-ad6f-4ee1-8997-b41326c34a73.png" width="400">
+ <img src="https://user-images.githubusercontent.com/11874274/179691456-dfb18427-e9fd-44ad-8c30-99e70dc99e9e.png" width="400">
+ <img src="https://user-images.githubusercontent.com/11874274/179691612-c52d8cb9-b1d5-4453-83f2-c7ed446a854c.png" width="400">
 
 ## Build the demo using Android Studio
 
@@ -52,3 +47,13 @@ This application should be run on a physical Android device.
 
 Downloading, extraction, and placing the models into the assets folder is
 managed automatically by the download.gradle file.
+
+You can use this pretrained models to test [here](https://drive.google.com/drive/folders/1UcWFlxTBfG2iu0lNmXVqmUIzO1Wp7KiS?usp=sharing).
+
+### Train your model
+
+You can train your own model with this [Jupyter Notebook](https://colab.research.google.com/drive/1_rr9MYLOjJ4GwU9qMsAwJ3LvShllJeW5?usp=sharing) using Google Colaboratory.
+
+### Slides
+
+View some [slides](https://slides.com/danilomendoza/deck-6167ec) about this app.
