@@ -84,11 +84,11 @@ class ObjectDetectorHelper(
 
         val modelName =
             when (currentModel) {
-                MODEL_MOBILENETV1 -> "mobilenetv1.tflite"
-                MODEL_EFFICIENTDETV0 -> "efficientdet-lite0.tflite"
-                MODEL_EFFICIENTDETV1 -> "efficientdet-lite1.tflite"
-                MODEL_EFFICIENTDETV2 -> "efficientdet-lite2.tflite"
-                else -> "mobilenetv1.tflite"
+                MODEL_MOBILENETV1 -> "helmet_efficientdet_lite0.tflite"
+                MODEL_EFFICIENTDETV0 -> "helmet_efficientdet_lite1.tflite"
+                MODEL_EFFICIENTDETV1 -> "helmet_efficientdet_lite2.tflite"
+                MODEL_EFFICIENTDETV2 -> "helmet_efficientdet_lite3.tflite"
+                else -> "helmet_efficientdet_lite0.tflite"
             }
 
         try {
