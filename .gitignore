@@ -111,3 +111,7 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+
+# jks files for signing (Android Studio 2.2 and later)
+*.jks
+jks/*
